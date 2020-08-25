@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/kigc-blog-app-logo.jpg"
+      type="image/jpg"
+    />
+    <title>kigc | blog</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--heading-->
+    <header>
+      <div class="container">
+        <div class="navbrand">
+          <div class="logo">
+            <img src="./images/kigc-blog-app-logo.jpg" alt="logo" />
+            <a href="index.html">KIGC Ltd</a>
+          </div>
+
+          <img
+            src="./images/menu.png"
+            alt="toggle"
+            class="m-icon i-class icon menu"
+            id="menu"
+          />
+
+          <nav id="nav">
+            <img
+              src="./images/close.jpg"
+              alt="close"
+              class="close"
+              id="close"
+            />
+            <ul id="nav-links">
+              <!--  <li>
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>-->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--main-->
+    <main>
+      <div class="container main-contact">
+        <section class="about-section">
+          <img src="./images/dushime.jpg" alt="Dushime" />
+        </section>
+        <aside class="about-aside">
+          <h3 class="text-center m-bottom capitalize">
+            About Dushime Emmanuel
+          </h3>
+          <p>
+            I am the owner of KIGC Ltd, I can use different techniques like
+            Laravel framework for PHP and MERN Stack for JavaScript. I am a
+            student of university of kigali in the department of computer
+            science and I am also an A1 software engineer from university of
+            rwanda college of science and technology. I currently live at kabuye
+            cell, jabana sector, gasabo district, kigali city. I like to play
+            football as my hobby and I usually like to be with my family in my
+            free time. I started a journey of looking how I can become a
+            professional developer that is why i joined andela technical
+            leadership program and I am expecting to learn more from this
+            program.
+          </p>
+        </aside>
+      </div>
+      <div class="container">
+        <p class="m-bottom m-top capitalize text-black ml flex">
+          <span class="font text-black">Follow us on:</span>
+          <a
+            href="https://www.linkedin.com/in/emma-papy-dushime-7b9907147/"
+            target="_blank"
+            ><img
+              src="./images/linkedin-2.png"
+              alt="linkedin"
+              class="icon m-icon" /></a
+          ><a href="https://web.facebook.com/emmapapy.dushime/" target="_blank">
+            <img
+              src="./images/face.png"
+              alt="linkedin"
+              class="icon m-icon" /></a
+          ><a href="https://www.instagram.com/papy_dushime/" target="_blank"
+            ><img
+              src="./images/instagram-2.png"
+              alt="linkedin"
+              class="icon m-icon"
+          /></a>
+        </p>
+      </div>
+      <div class="profile-popup" id="profile-modal">
+        <img src="./images//no-profile.jpg" alt="profile picture" />
+        <p>
+          <span
+            >First Name:
+            <strong id="first-name" class="capitalize text-black"></strong
+          ></span>
+          <br />
+          <span
+            >Last Name:
+            <strong id="last-name" class="capitalize text-black"></strong
+          ></span>
+        </p>
+        <button id="edit-profile">Edit</button
+        ><button class="float-right" id="close-profile">Close</button>
+      </div>
+    </main>
+    <!--footer-->
+    <footer>
+      <p class="text-center" id="footer"></p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
