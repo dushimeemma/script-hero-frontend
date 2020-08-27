@@ -89,22 +89,15 @@ Your Questions...</textarea
               >
               <div class="errors" id="messageErrors"></div>
             </div>
-            <button class="mt mb btn" type="submit">
-              Send Question
-            </button>
+            <button class="mt mb btn" type="submit">Send Question</button>
           </form>
         </aside>
       </div>
       <div class="profile-popup" id="profile-modal">
         <img src="./images//no-profile.jpg" alt="profile picture" />
         <p>
-          <span
-            >First Name: <strong id="first-name" class="capitalize"></strong
-          ></span>
+          <span>Name: <strong id="name" class="capitalize"></strong></span>
           <br />
-          <span
-            >Last Name: <strong id="last-name" class="capitalize"></strong
-          ></span>
         </p>
         <button id="edit-profile">Edit</button
         ><button class="float-right" id="close-profile">Close</button>
@@ -114,6 +107,8 @@ Your Questions...</textarea
     <footer>
       <p class="text-center footer" id="footer"></p>
     </footer>
-    <script src="./js//main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/validateContact.js"></script>
   </body>
 </html>
