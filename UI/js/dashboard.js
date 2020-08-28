@@ -1,6 +1,8 @@
 token = window.localStorage.getItem('token');
+id = window.localStorage.getItem('id');
+email = window.localStorage.getItem('email');
 
-if (!token) {
+if (email !== 'dushimeemma@gmail.com') {
   window.location.href = 'login.html';
 }
 
@@ -114,8 +116,8 @@ unreadQ();
 //update profile
 let updateBtn = document.querySelector('#update-profile');
 updateBtn.addEventListener('click', (e) => {
-  if (name) {
-    window.location.href = 'updateProfile.html?id=' + name;
+  if (id) {
+    window.location.href = 'updateProfile.html?id=' + id;
   }
 });
 //view articles using links

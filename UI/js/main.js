@@ -1,5 +1,7 @@
 let token;
 let name;
+let userId;
+let email;
 
 const viewProfile = document.querySelector('#profile-modal');
 const menu = document.getElementById('menu');
@@ -58,3 +60,8 @@ userProfile.addEventListener('click', (e) => {
 });
 let profileName = document.querySelector('#name');
 profileName.innerHTML = `${name}`;
+
+userId = window.localStorage.getItem('id');
+editProfile.addEventListener('click', (e) => {
+  window.location.href = 'updateProfile.html?id=' + userId;
+});
