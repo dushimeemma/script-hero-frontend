@@ -29,6 +29,10 @@ body {
   margin: 2% auto;
   cursor: pointer;
 }
+.goole-auth {
+  width: 60%;
+  height: 50px;
+}
 ul {
   list-style-type: none;
 }

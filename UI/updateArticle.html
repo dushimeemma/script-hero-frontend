@@ -51,26 +51,30 @@
     </header>
     <!--main-->
     <main>
-      <img src="./images/exact-background-image.jpg" alt="background" />
-      <section class="showcase">
-        <div class="container">
-          <h3>Welcome To KIGC Ltd</h3>
-          <p class="text-center">
-            Software development and web design at affordable price
-          </p>
-          <h4 class="text-center">Kigali, Rwanda</h4>
-        </div>
-      </section>
+      <div class="container form text-black">
+        <a href="dashboard.html">
+          <img src="./images/back.png" alt="back" class="icon m-icon i-class" />
+        </a>
+        <h3 class="text-center m-bottom capitalize">Update article</h3>
+        <hr />
+        <div class="errors" id="errors"></div>
+        <form id="update-form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" />
+          </div>
+          <div class="form-group">
+            <label for="password">Body</label>
+            <textarea name="body" id="body" cols="15" rows="5"></textarea>
+          </div>
+          <button class="mt mb btn" type="submit">Update Article</button>
+        </form>
+      </div>
       <div class="profile-popup" id="profile-modal">
         <img src="./images//no-profile.jpg" alt="profile picture" />
         <p>
-          <span
-            >First Name: <strong id="first-name" class="capitalize"></strong
-          ></span>
+          <span>Name: <strong id="name" class="capitalize"></strong></span>
           <br />
-          <span
-            >Last Name: <strong id="last-name" class="capitalize"></strong
-          ></span>
         </p>
         <button id="edit-profile">Edit</button
         ><button class="float-right" id="close-profile">Close</button>
@@ -78,8 +82,10 @@
     </main>
     <!--footer-->
     <footer>
-      <p class="text-center footer" id="footer"></p>
+      <p class="text-center" id="footer"></p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/updateArticle.js"></script>
   </body>
 </html>

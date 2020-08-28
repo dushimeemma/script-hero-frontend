@@ -53,8 +53,9 @@
     <main>
       <div class="container form text-black">
         <h3 class="text-center mt mb capitalize">Sign In now</h3>
-        <hr />
+
         <div class="errors text-center" id="errors"></div>
+        <hr />
         <form id="login-form">
           <div class="form-group">
             <label for="email">Email</label>
@@ -76,13 +77,8 @@
       <div class="profile-popup" id="profile-modal">
         <img src="./images//no-profile.jpg" alt="profile picture" />
         <p>
-          <span
-            >First Name: <strong id="first-name" class="capitalize"></strong
-          ></span>
+          <span>Name: <strong id="name" class="capitalize"></strong></span>
           <br />
-          <span
-            >Last Name: <strong id="last-name" class="capitalize"></strong
-          ></span>
         </p>
         <button id="edit-profile">Edit</button
         ><button class="float-right" id="close-profile">Close</button>
@@ -92,6 +88,8 @@
     <footer>
       <p class="text-center" id="footer"></p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/validateLogin.js"></script>
   </body>
 </html>
